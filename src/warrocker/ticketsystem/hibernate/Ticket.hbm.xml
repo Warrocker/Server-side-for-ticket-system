@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="warrocker.ticketsystem.hibernate.Ticket" table="ticket">
+        <meta attribute="class-description">
+            This class contains the ticket detail.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="user_id" column="user_id" type="int"/>
+        <property name="cr_dtime" column="cr_dtime" type="timestamp"/>
+        <property name="st_dtime" column="st_dtime" type="timestamp"/>
+        <property name="ch_dtime" column="ch_dtime" type="timestamp"/>
+        <property name="title" column="title" type="string"/>
+        <property name="descr" column="descr" type="string" />
+        <property name="status" column="status" type="int"/>
+        <property name="category" column="category" type="int"/>
+        <property name="priority" column="priority" type="int"/>
+        <property name="performer" column="performer" type="int"/>
+        <property name="grup_per" column="grup_per" type="int"/>
+
+
+
+    </class>
+</hibernate-mapping>

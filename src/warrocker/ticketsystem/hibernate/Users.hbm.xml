@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="warrocker.ticketsystem.hibernate.Users" table="users">
+        <meta attribute="class-description">
+            This class contains the work detail.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="login" column="login" type="string"/>
+        <property name="hash" column="hash" type="string"/>
+        <property name="hash5" column="hash5" type="string"/>
+        <property name="caption" column="caption" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="access" column="access" type="string"/>
+        <property name="birthday" column="birthday" type="date"/>
+        <property name="pnumber" column="pnumber" type="string"/>
+        <property name="pnumber2" column="pnumber2" type="string"/>
+        <property name="icq" column="icq" type="int"/>
+        <property name="home_adr" column="home_adr" type="string"/>
+        <property name="pfoto" column="pfoto" type="string"/>
+        <property name="skype" column="skype" type="string"/>
+        <property name="lang" column="lang" type="string"/>
+        <property name="ucolor" column="ucolor" type="string"/>
+        <property name="latitude" column="latitude" type="double"/>
+        <property name="longitude" column="longitude" type="double"/>
+
+        <!--<set name="employee" table="WorkerSalary" lazy="false">-->
+            <!--<key column="work_id"/>-->
+            <!--<many-to-many column="employee_id" class="warrocker.Employee"/>-->
+        <!--</set>-->
+    </class>
+</hibernate-mapping>
