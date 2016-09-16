@@ -19,13 +19,13 @@ public class Ticket  implements Serializable {
     private int performer;
     private int grup_per;
 
-    private Ticket() {
+    public Ticket() {
     }
 
     public Ticket(int id, int user_id, Timestamp cr_dtime, Timestamp st_dtime, Timestamp ch_dtime, String title, String descr, int status, int category, int priority, int performer, int grup_per) {
         this.id = id;
         this.user_id = user_id;
-        this.cr_dtime = new java.sql.Timestamp(Calendar.getInstance().getTime().getTime());
+        this.cr_dtime = cr_dtime;
         this.st_dtime = st_dtime;
         this.ch_dtime = ch_dtime;
         this.title = title;
@@ -37,7 +37,7 @@ public class Ticket  implements Serializable {
         this.grup_per = grup_per;
     }
 
-    private int getId() {
+    public int getId() {
         return id;
     }
 
@@ -61,7 +61,7 @@ public class Ticket  implements Serializable {
         this.cr_dtime = cr_dtime;
     }
 
-    Date getSt_dtime() {
+    public Date getSt_dtime() {
         return st_dtime;
     }
 
@@ -77,7 +77,7 @@ public class Ticket  implements Serializable {
         this.ch_dtime = ch_dtime;
     }
 
-    String getTitle() {
+    public String getTitle() {
         return title;
     }
 
@@ -128,7 +128,7 @@ public class Ticket  implements Serializable {
     }
 
 
-    int getStatus() {
+    public int getStatus() {
         return status;
     }
 

@@ -23,7 +23,7 @@ public class Users implements Serializable{
     private double latitude;
     private double longitude;
 
-    private Users(){}
+    public Users(){}
 
     public Users(String login, String hash) {
         this.login = login;

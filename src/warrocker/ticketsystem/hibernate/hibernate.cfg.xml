@@ -4,22 +4,22 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">
-            org.hibernate.dialect.MySQLDialect
-        </property>
+
         <property name="hibernate.connection.driver_class">
             com.mysql.jdbc.Driver
         </property>
-
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
         <!-- Assume test is the database name -->
         <property name="hibernate.connection.url">
-            jdbc:mysql://site.com
+            jdbc:mysql://realnet.pp.ua/itstorm
         </property>
         <property name="hibernate.connection.username">
             root
         </property>
         <property name="hibernate.connection.password">
-            password
+            realnet_f
         </property>
 
         <!-- List of XML mapping files -->

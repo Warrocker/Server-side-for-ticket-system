@@ -11,19 +11,31 @@
         <id name="id" type="int" column="id">
             <generator class="increment"/>
         </id>
-        <property name="user_id" column="user_id" type="int"/>
+        <!--<property name="user_id" column="user_id" type="int"/>-->
         <property name="cr_dtime" column="cr_dtime" type="timestamp"/>
         <property name="st_dtime" column="st_dtime" type="timestamp"/>
         <property name="ch_dtime" column="ch_dtime" type="timestamp"/>
         <property name="title" column="title" type="string"/>
         <property name="descr" column="descr" type="string" />
-        <property name="status" column="status" type="int"/>
+        <property name="status" column="status" type="int" />
         <property name="category" column="category" type="int"/>
         <property name="priority" column="priority" type="int"/>
         <property name="performer" column="performer" type="int"/>
         <property name="grup_per" column="grup_per" type="int"/>
 
-
+        <!--<one-to-one name="st" class="warrocker.ticketsystem.hibernate.Status" />-->
+        <!--<many-to-one name="status" column="status"-->
+                     <!--class="warrocker.ticketsystem.hibernate.Status" not-null="true"/>-->
+        <!--<many-to-one name="user_id" column="user_id"-->
+                     <!--class="warrocker.ticketsystem.hibernate.Users" not-null="true"/>-->
+        <!--<many-to-one name="category" column="category"-->
+                     <!--class="warrocker.ticketsystem.hibernate.Category" not-null="true"/>-->
+        <!--<many-to-one name="priority" column="priority"-->
+                     <!--class="warrocker.ticketsystem.hibernate.Priority" not-null="true"/>-->
+        <!--<many-to-one name="performer" column="performer"-->
+                     <!--class="warrocker.ticketsystem.hibernate.Users" not-null="true"/>-->
+        <!--<many-to-one name="grup_per" column="grup_per"-->
+                     <!--class="warrocker.ticketsystem.hibernate.Group" not-null="true"/>-->
 
     </class>
 </hibernate-mapping>

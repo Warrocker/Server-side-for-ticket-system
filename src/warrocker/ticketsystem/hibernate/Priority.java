@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Priority  implements Serializable {
     private int id;
     private String caption;
-    private Priority(){
+    public Priority(){
     }
     public Priority(int id, String caption) {
         this.id = id;

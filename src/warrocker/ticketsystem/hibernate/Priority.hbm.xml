@@ -12,10 +12,5 @@
             <generator class="increment"/>
         </id>
         <property name="caption" column="caption" type="string"/>
-
-        <!--<set name="employee" table="WorkerSalary" lazy="false">-->
-        <!--<key column="work_id"/>-->
-        <!--<many-to-many column="employee_id" class="warrocker.Employee"/>-->
-        <!--</set>-->
     </class>
 </hibernate-mapping>

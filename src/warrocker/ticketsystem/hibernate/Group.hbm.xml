@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="warrocker.ticketsystem.hibernate.Group" table="group">
+    <class name="warrocker.ticketsystem.hibernate.Group" table="`group`">
         <meta attribute="class-description">
             This class contains the group detail.
         </meta>
@@ -12,11 +12,6 @@
             <generator class="increment"/>
         </id>
         <property name="caption" column="caption" type="string"/>
-        <property name="rule" column="rule" type="int"/>
-
-        <!--<set name="employee" table="WorkerSalary" lazy="false">-->
-        <!--<key column="work_id"/>-->
-        <!--<many-to-many column="employee_id" class="warrocker.Employee"/>-->
-        <!--</set>-->
+        <!--<property name="rule" column="rule" type="int"/>-->
     </class>
 </hibernate-mapping>

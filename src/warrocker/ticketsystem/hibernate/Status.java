@@ -6,22 +6,22 @@ import java.util.Set;
 
 
 public class Status  implements Serializable {
-    private int id;
+    private int status;
     private String caption;
     private String ucolor;
-    private Status(){}
-    public Status(int id, String caption, String ucolor) {
-        this.id = id;
+    public Status(){}
+    public Status(int status, String caption, String ucolor) {
+        this.status = status;
         this.caption = caption;
         this.ucolor = ucolor;
     }
 
-    public int getId() {
-        return id;
+    int getStatus() {
+        return status;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     public String getCaption() {

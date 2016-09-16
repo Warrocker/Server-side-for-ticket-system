@@ -7,7 +7,7 @@ public class Category implements Serializable {
     private int id;
     private String caption;
 
-    private Category() {
+    public Category() {
     }
 
     public Category(int id, String caption) {
